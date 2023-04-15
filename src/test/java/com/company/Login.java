@@ -40,18 +40,6 @@ public class Login {
 		System.out.println("The title of this page is ===> " +pageTitle);
 		Assert.assertEquals("OrangeHRM", pageTitle);    //verify the title of the webpage
 	
-	        TakesScreenshot scrShot =((TakesScreenshot)driver);
-		//Call getScreenshotAs method to create image file
-		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-		//Move image file to new destination
-		File DestFile=new File("/tmp/screenshot.png");
-		//Copy file at destination
-try{
-			FileUtils.copyFile(SrcFile, DestFile);
-		}
-		catch(Exception exp){
-			System.out.println(exp.toString());
-		}
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.id("email")).sendKeys("anuj_sharma401@yahoo.com");
 		driver.findElement(By.id("pass")).sendKeys("");
