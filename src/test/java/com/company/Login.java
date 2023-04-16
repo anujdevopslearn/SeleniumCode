@@ -19,7 +19,7 @@ public class Login {
     WebDriver driver;
     @BeforeTest
     public void setup(){
-		System.setProperty("WebDriver.chrome.driver","/opt/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/root/SeleniumTest/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox"); // Bypass OS security model, MUST BE THE VERY FIRST OPTION
         options.addArguments("--headless");
