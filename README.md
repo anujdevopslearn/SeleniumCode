@@ -18,8 +18,10 @@ sudo apt install ./google-chrome*.deb
 
 4) Chrome webdriver to execute requests on Chrome browser
 
-wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+wget https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.109/linux64/chromedriver-linux64.zip	
 
 unzip chromedriver_linux64.zip
+
+cp chromedriver-linux64/chromedriver /opt
 
 https://chromedriver.chromium.org/downloads
